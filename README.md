@@ -19,7 +19,7 @@ Phan Quốc Tuấn
 
 This is an face recognition system was built base on pipeline:
 
-<img src="https://imgur.com/4Fhhsj1">
+<img src="https://i.imgur.com/4Fhhsj1.png">
 
 - For Face Detection, my method use [MTCNN](https://github.com/ipazc/mtcnn) with minisize=50.
 - For Feature Extraction, my method use [Arcface](https://github.com/deepinsight/insightface) with pre-trained [LResNet100E-IR,ArcFace@ms1m-refine-v2](https://github.com/deepinsight/insightface/wiki/Model-Zoo).
@@ -67,6 +67,7 @@ Download a pre-trained model for Arcface at [LResNet100E-IR,ArcFace@ms1m-refine-
 
 1. Prepare your recognition data in ./deploy/Images folder
 
+```
 deploy
 +--_Images
 |  +--A
@@ -77,6 +78,7 @@ deploy
 |  |   +--B_1.jpg
 |  |   +--...
 |  +--...
+```
 
 2. Feature Extraction of all images data in Images folder and write to ./deploy/Data
 
