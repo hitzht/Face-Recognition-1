@@ -6,12 +6,10 @@ Phan Quốc Tuấn
 [Face Recognition](#face-recognition)
 - [Introduction](#introduction)
 - [Installation](#installation)
-- [Pre-trained](#)
+- [Download a pre-trained](#download-a-pre-trained)
 - [Run a demo](#run-a-demo)
 
-[Face Regconition between Python client and Python server]
-
-[Face Regcontion between Jave client and Python server]
+[Face Regconition between Python client and Python server](#face-regconition-between-python-client-and-Python-server)
 
 ## Face Recognition
 
@@ -93,6 +91,30 @@ python pre_process.py
 ```
 python faiss_reg.py
 ```
+
+## Face Regconition between Python client and Python server
+
+1. Server
+
+Run following command on your python server
+
+```
+python server-python.py
+```
+
+*Note*: This server version still use brute froce for feature retrival. Please use VP tree or Faiss instead.
+
+2. Client
+
+Before use run, please make sure you config HOST and PORT to your server in "client.py"
+Run
+
+```
+python client.py
+```
+
+
+
 
 
 
