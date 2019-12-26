@@ -25,19 +25,19 @@ This is an face recognition system was built base on pipeline:
 
 ### Installation
 
-1. Use Anaconda for create virtual environment
+**1. Use Anaconda for create virtual environment**
 
 ```
 conda create -n FaceReg python=3.7
 ```
 
-2. Clone the repository
+**2. Clone the repository**
 
 ```
 git clone
 ```
 
-3. Install 'MXNet' with GPU support on cuda-10.1 (Python 3.7)
+**3. Install 'MXNet' with GPU support on cuda-10.1 (Python 3.7)**
 
 ```
 pip install mxnet-cu101
@@ -49,7 +49,7 @@ pip install mxnet-cu101
 pip install mxnet-cpu
 ```
 
-4. Install some required library
+**4. Install some required library**
 
 ```
 pip install scikit-learn
@@ -63,7 +63,7 @@ Download a pre-trained model for Arcface at [LResNet100E-IR,ArcFace@ms1m-refine-
 
 ### Run a demo
 
-1. Prepare your recognition data in ./deploy/Images folder
+**1. Prepare your recognition data in ./deploy/Images folder**
 
 ```
 deploy
@@ -78,7 +78,7 @@ deploy
 |  +--...
 ```
 
-2. Feature Extraction of all images data in Images folder and write to ./deploy/Data
+**2. Feature Extraction of all images data in Images folder and write to ./deploy/Data**
 
 (Before run make sure you in ./deploy directory)
 
@@ -86,7 +86,7 @@ deploy
 python pre_process.py
 ```
 
-3. Let's run your demo!
+**3. Let's run your demo!**
 
 ```
 python faiss_reg.py
@@ -94,7 +94,7 @@ python faiss_reg.py
 
 ## Face Regconition between Python client and Python server
 
-1. Server
+**1. Server**
 
 Run following command on your python server
 
@@ -104,7 +104,7 @@ python server-python.py
 
 *Note*: This server version still use brute froce for feature retrival. Please use VP tree or Faiss instead.
 
-2. Client
+**2. Client**
 
 Before use run, please make sure you config HOST and PORT to your server in "client.py"
 Run
